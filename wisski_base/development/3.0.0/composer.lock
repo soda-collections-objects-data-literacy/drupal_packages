@@ -3145,7 +3145,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wisski_default_data_model.git",
-                "reference": "a385f6f3bfacdd5ce3398eb55d1b42dd62d0099b"
+                "reference": "e19f0d6f88a504d3ff57e27da468373f49e700c7"
             },
             "require": {
                 "drupal/colorbox": "^2.2",
