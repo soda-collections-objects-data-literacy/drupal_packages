@@ -2777,11 +2777,11 @@
         },
         {
             "name": "drupal/wisski_default_data_model",
-            "version": "1.5.2",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wisski_default_data_model.git",
-                "reference": "d09a77ac1cb1fc671582cd95c812be182e45442b"
+                "reference": "e19f0d6f88a504d3ff57e27da468373f49e700c7"
             },
             "require": {
                 "drupal/colorbox": "^2.2",
