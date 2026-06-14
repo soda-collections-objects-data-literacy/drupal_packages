@@ -2,7 +2,8 @@
 """
 Compare the Drupal installation composer files with the latest production
 version in drupal_packages, write a changelog entry, bump the version,
-and copy composer.json + composer.lock into a new version folder.
+and copy composer.json + composer.lock into a new production version folder
+and the matching development track (e.g. development/3.x).
 """
 
 from __future__ import annotations
@@ -139,7 +140,28 @@ def find_latest_version(production_dir: Path) -> str:
     return versions[-1][1]
 
 
-def prepend_changelog(changelog_path: Path, version: str, lines: list[str]) -> None:
+def find_development_dir(packages_repo: Path, package_name: str, major: int) -> Path:
+    development_root = packages_repo / package_name / "development"
+    if not development_root.is_dir():
+        raise SystemExit(f"Development directory does not exist: {development_root}")
+
+    track = f"{major}.x"
+    development_dir = development_root / track
+    if not development_dir.is_dir():
+        available = sorted(
+            child.name for child in development_root.iterdir() if child.is_dir()
+        )
+        raise SystemExit(
+            f"Development track {track!r} does not exist under {development_root}. "
+            f"Available: {', '.join(available) or '(none)'}"
+        )
+    return development_dir
+
+
+def copy_composer_files(source_composer: Path, source_lock: Path, target_dir: Path) -> None:
+    target_dir.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(source_composer, target_dir / "composer.json")
+    shutil.copy2(source_lock, target_dir / "composer.lock")
     header = "# Changelog\n"
     entry = f"## {version}\n" + "\n".join(lines) + "\n"
 
@@ -177,6 +199,16 @@ def main() -> int:
         "--package-path",
         default="wisski_base/production",
         help="Package path inside the repo (default: wisski_base/production)",
+    )
+    parser.add_argument(
+        "--package-name",
+        default="wisski_base",
+        help="Package name for resolving development tracks (default: wisski_base)",
+    )
+    parser.add_argument(
+        "--no-update-development",
+        action="store_true",
+        help="Do not update the matching development track (e.g. development/3.x)",
     )
     version_group = parser.add_mutually_exclusive_group()
     version_group.add_argument(
@@ -247,6 +279,12 @@ def main() -> int:
 
     next_version = bump_version(latest_version, args.bump)
     target_dir = production_dir / next_version
+    next_major = parse_version(next_version)[0]
+    development_dir = (
+        None
+        if args.no_update_development
+        else find_development_dir(packages_repo, args.package_name, next_major)
+    )
 
     if target_dir.exists():
         raise SystemExit(f"Target version directory already exists: {target_dir}")
@@ -254,6 +292,8 @@ def main() -> int:
     print(f"Latest production version: {latest_version}")
     print(f"New production version:    {next_version}")
     print(f"Target directory:          {target_dir}")
+    if development_dir is not None:
+        print(f"Development track:         {development_dir}")
     print("Changelog entry:")
     for line in changes:
         print(f"  {line}")
@@ -263,12 +303,15 @@ def main() -> int:
         return 0
 
     target_dir.mkdir(parents=True, exist_ok=False)
-    shutil.copy2(source_composer, target_dir / "composer.json")
-    shutil.copy2(source_lock, target_dir / "composer.lock")
+    copy_composer_files(source_composer, source_lock, target_dir)
     prepend_changelog(changelog_path, next_version, changes)
 
     print(f"Created {target_dir / 'composer.json'}")
     print(f"Created {target_dir / 'composer.lock'}")
+    if development_dir is not None:
+        copy_composer_files(source_composer, source_lock, development_dir)
+        print(f"Updated {development_dir / 'composer.json'}")
+        print(f"Updated {development_dir / 'composer.lock'}")
     print(f"Updated {changelog_path}")
     return 0
 
