@@ -65,8 +65,8 @@
         "drupal/sso_bouncer": "^1.0",
         "drupal/viewfield": "^3.0@beta",
         "drupal/wisski": "dev-scs_base",
-        "drupal/wisski_default_data_model": "^1.6",
-        "drupal/wisski_starter": "^1.1",
+        "drupal/wisski_default_data_model": "1.x-dev",
+        "drupal/wisski_starter": "1.x-dev",
         "drush/drush": "^13.7"
     },
     "conflict": {
