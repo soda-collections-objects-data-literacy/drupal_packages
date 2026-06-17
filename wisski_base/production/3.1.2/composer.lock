@@ -2751,7 +2751,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wisski.git",
-                "reference": "e7770d139f2065d6d9d83d1359a12a7219143528"
+                "reference": "a5725d1a2cfb57c78a8f3d02205b45dc3e9701e8"
             },
             "require": {
                 "sweetrdf/easyrdf": "*"
