@@ -19,16 +19,6 @@
             "url": "https://git.drupalcode.org/project/wisski.git"
         },
         {
-            "name": "wisski_starter",
-            "type": "vcs",
-            "url": "https://git.drupalcode.org/project/wisski_starter.git"
-        },
-        {
-            "name": "wisski_default_data_model",
-            "type": "vcs",
-            "url": "https://git.drupalcode.org/project/wisski_default_data_model.git"
-        },
-        {
             "name": "openid_connect-3516375",
             "type": "vcs",
             "url": "https://git.drupalcode.org/issue/openid_connect-3516375.git"
@@ -64,7 +54,7 @@
         "drupal/sso_bouncer": "^1.0",
         "drupal/viewfield": "^3.0@beta",
         "drupal/wisski": "dev-scs_base",
-        "drupal/wisski_default_data_model": "^1.7",
+        "drupal/wisski_default_data_model": "^1.8",
         "drupal/wisski_starter": "^1.1",
         "drush/drush": "^13.7"
     },
