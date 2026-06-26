@@ -50,7 +50,7 @@
         "drupal/dlf_aim_3d_viewer": "^1.0",
         "drupal/ds": "^3.32",
         "drupal/field_group": "^4.0",
-        "drupal/geofield": "^1",
+        "drupal/geofield": "^10.3",
         "drupal/health_check": "^3.1",
         "drupal/image_effects": "^4.0",
         "drupal/imagemagick": "^4.0",
