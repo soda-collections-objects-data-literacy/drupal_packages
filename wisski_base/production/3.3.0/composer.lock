@@ -2826,16 +2826,16 @@
         },
         {
             "name": "drupal/wisski_default_data_model",
-            "version": "1.8.1",
+            "version": "1.8.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wisski_default_data_model.git",
-                "reference": "8ed41d0220951bf2cb24d4530ecbf0f703bc16c4"
+                "reference": "1161b28bcc16ec4a006534ac35cdabfc77b2bc9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fwisski_default_data_model/repository/archive.zip?sha=8ed41d0220951bf2cb24d4530ecbf0f703bc16c4",
-                "reference": "8ed41d0220951bf2cb24d4530ecbf0f703bc16c4",
+                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fwisski_default_data_model/repository/archive.zip?sha=1161b28bcc16ec4a006534ac35cdabfc77b2bc9d",
+                "reference": "1161b28bcc16ec4a006534ac35cdabfc77b2bc9d",
                 "shasum": ""
             },
             "require": {
@@ -2869,7 +2869,7 @@
                 "wisski"
             ],
             "support": {
-                "source": "https://git.drupalcode.org/project/wisski_default_data_model/-/tree/1.8.1"
+                "source": "https://git.drupalcode.org/project/wisski_default_data_model/-/tree/1.8.2"
             },
             "time": "2026-06-26T15:14:52+00:00"
         },
