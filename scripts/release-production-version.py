@@ -162,6 +162,13 @@ def copy_composer_files(source_composer: Path, source_lock: Path, target_dir: Pa
     target_dir.mkdir(parents=True, exist_ok=True)
     shutil.copy2(source_composer, target_dir / "composer.json")
     shutil.copy2(source_lock, target_dir / "composer.lock")
+
+
+def prepend_changelog(
+    changelog_path: Path,
+    version: str,
+    lines: list[str],
+) -> None:
     header = "# Changelog\n"
     entry = f"## {version}\n" + "\n".join(lines) + "\n"
 
