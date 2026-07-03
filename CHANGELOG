@@ -1,4 +1,9 @@
 # Changelog
+## 3.5.0
+- update package `drupal/core-composer-scaffold` from ^11.3 to ^11.4
+- update package `drupal/core-project-message` from ^11.3 to ^11.4
+- update package `drupal/core-recipe-unpack` from ^11.3 to ^11.4
+- update package `drupal/core-recommended` from ^11.3 to ^11.4
 ## development/3.x
 - allow `symfony/runtime` Composer plugin (required when floating update resolves Drupal 11.4+)
 - remove `composer.lock` from development track (unpinned; resolved at image build time)
