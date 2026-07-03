@@ -164,6 +164,15 @@ def copy_composer_files(source_composer: Path, source_lock: Path, target_dir: Pa
     shutil.copy2(source_lock, target_dir / "composer.lock")
 
 
+def sync_development_composer(source_composer: Path, target_dir: Path) -> None:
+    """Development tracks are unpinned: composer.json only, no lock file."""
+    target_dir.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(source_composer, target_dir / "composer.json")
+    development_lock = target_dir / "composer.lock"
+    if development_lock.exists():
+        development_lock.unlink()
+
+
 def prepend_changelog(
     changelog_path: Path,
     version: str,
@@ -316,9 +325,9 @@ def main() -> int:
     print(f"Created {target_dir / 'composer.json'}")
     print(f"Created {target_dir / 'composer.lock'}")
     if development_dir is not None:
-        copy_composer_files(source_composer, source_lock, development_dir)
+        sync_development_composer(source_composer, development_dir)
         print(f"Updated {development_dir / 'composer.json'}")
-        print(f"Updated {development_dir / 'composer.lock'}")
+        print(f"Removed lock file from {development_dir} (development track is unpinned)")
     print(f"Updated {changelog_path}")
     return 0
 

@@ -1,4 +1,7 @@
 # Changelog
+## development/3.x
+- allow `symfony/runtime` Composer plugin (required when floating update resolves Drupal 11.4+)
+- remove `composer.lock` from development track (unpinned; resolved at image build time)
 ## 3.4.2
 - refresh `composer.lock` shasum for `drupal/dlf_aim_3d_viewer` 1.0.2 (drupal.org re-packaged the release zip)
 ## 3.3.1
