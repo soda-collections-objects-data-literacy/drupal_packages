@@ -1,4 +1,9 @@
 # Changelog
+## 3.5.1
+- update package `drupal/core-composer-scaffold` from ^11.4 to ^11.3 <11.4
+- update package `drupal/core-project-message` from ^11.4 to ^11.3 <11.4
+- update package `drupal/core-recipe-unpack` from ^11.4 to ^11.3 <11.4
+- update package `drupal/core-recommended` from ^11.4 to ^11.3 <11.4
 ## 3.5.0
 - update package `drupal/core-composer-scaffold` from ^11.3 to ^11.4
 - update package `drupal/core-project-message` from ^11.3 to ^11.4
