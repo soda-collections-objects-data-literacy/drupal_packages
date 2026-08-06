@@ -1,4 +1,8 @@
 # Changelog
+## 3.6.0
+- add package `drupal/ddb_minimal_record_export` ^1.0
+- remove package `drupal/wisski_default_data_model` ^1.9
+- update package `drupal/wisski_default_data_model` from ^1.9 to ^1.10
 ## 3.5.1
 - update package `drupal/core-composer-scaffold` from ^11.4 to ^11.3 <11.4
 - update package `drupal/core-project-message` from ^11.4 to ^11.3 <11.4
