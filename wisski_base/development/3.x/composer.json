@@ -36,6 +36,7 @@
         "drupal/core-project-message": "^11.3 <11.4",
         "drupal/core-recipe-unpack": "^11.3 <11.4",
         "drupal/core-recommended": "^11.3 <11.4",
+        "drupal/ddb_minimal_record_export": "^1.0",
         "drupal/dependent_list": "^1.3",
         "drupal/devel": "^5.0",
         "drupal/dlf_aim_3d_viewer": "^1.0",
