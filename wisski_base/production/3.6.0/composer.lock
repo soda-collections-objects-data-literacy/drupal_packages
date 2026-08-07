@@ -2870,16 +2870,16 @@
         },
         {
             "name": "drupal/wisski_default_data_model",
-            "version": "1.10.0",
+            "version": "1.10.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wisski_default_data_model.git",
-                "reference": "d3147f7c046bd31ccb76ae3e53f3a88986b04a39"
+                "reference": "aad668733cc0f87d5c88c2069860a26a57dd00d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fwisski_default_data_model/repository/archive.zip?sha=d3147f7c046bd31ccb76ae3e53f3a88986b04a39",
-                "reference": "d3147f7c046bd31ccb76ae3e53f3a88986b04a39",
+                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fwisski_default_data_model/repository/archive.zip?sha=aad668733cc0f87d5c88c2069860a26a57dd00d4",
+                "reference": "aad668733cc0f87d5c88c2069860a26a57dd00d4",
                 "shasum": ""
             },
             "require": {
