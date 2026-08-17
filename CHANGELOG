@@ -1,4 +1,14 @@
 # Changelog
+## 3.7.0
+- add package `drupal/devel` ^5.0
+- update package `drupal/core-composer-scaffold` from ^11.3 <11.4 to ^11.4
+- update package `drupal/core-project-message` from ^11.3 <11.4 to ^11.4
+- update package `drupal/core-recipe-unpack` from ^11.3 <11.4 to ^11.4
+- update package `drupal/core-recommended` from ^11.3 <11.4 to ^11.4
+- update package `drupal/image_effects` from ^4.0 to ^5.0
+- update package `drupal/imagemagick` from ^4.0 to ^5.0
+- update package `drupal/nextcloud_webdav_mount` from ^1.6 to ^2.0
+- update package `drupal/wisski_default_data_model` from ^1.10 to ^1.11
 ## 3.6.0
 - add package `drupal/ddb_minimal_record_export` ^1.0
 - remove package `drupal/wisski_default_data_model` ^1.9
