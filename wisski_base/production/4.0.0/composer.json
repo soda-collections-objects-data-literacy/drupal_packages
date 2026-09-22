@@ -39,7 +39,7 @@
         "drupal/image_effects": "^5.0",
         "drupal/imagemagick": "^5.0",
         "drupal/imce": "^3.1",
-        "drupal/inline_entity_form": "^3.0@RC",
+        "drupal/inline_entity_form": "^3.0",
         "drupal/leaflet": "^10.2",
         "drupal/nextcloud_webdav_mount": "^2.0",
         "drupal/openid_connect": "dev-3516375-implement-drush-commands",

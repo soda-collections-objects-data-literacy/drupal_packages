@@ -10,15 +10,6 @@
     },
     "repositories": [
         {
-            "type": "git",
-            "url": "https://git.drupalcode.org/issue/conditional_fields-3495402.git"
-        },
-        {
-            "name": "wisski",
-            "type": "vcs",
-            "url": "https://git.drupalcode.org/project/wisski.git"
-        },
-        {
             "name": "openid_connect-3516375",
             "type": "vcs",
             "url": "https://git.drupalcode.org/issue/openid_connect-3516375.git"
@@ -31,7 +22,7 @@
     "require": {
         "composer/installers": "^2.3",
         "drupal/colorbox": "^2.2",
-        "drupal/conditional_fields": "dev-3495402-warning-trying-to",
+        "drupal/conditional_fields": "4.0.0-alpha6",
         "drupal/core-composer-scaffold": "^11.4",
         "drupal/core-project-message": "^11.4",
         "drupal/core-recipe-unpack": "^11.4",
@@ -43,11 +34,12 @@
         "drupal/ds": "^3.32",
         "drupal/field_group": "^4.0",
         "drupal/geofield": "^10.3",
+        "drupal/gin": "^5.0",
         "drupal/health_check": "^3.1",
         "drupal/image_effects": "^5.0",
         "drupal/imagemagick": "^5.0",
         "drupal/imce": "^3.1",
-        "drupal/inline_entity_form": "^3.0@RC",
+        "drupal/inline_entity_form": "^3.0",
         "drupal/leaflet": "^10.2",
         "drupal/nextcloud_webdav_mount": "^2.0",
         "drupal/openid_connect": "dev-3516375-implement-drush-commands",
@@ -55,9 +47,9 @@
         "drupal/single_content_sync": "^1.4",
         "drupal/sso_bouncer": "^1.0",
         "drupal/viewfield": "^3.0@beta",
-        "drupal/wisski": "dev-scs_base",
-        "drupal/wisski_default_data_model": "^1.11",
-        "drupal/wisski_starter": "^1.1",
+        "drupal/wisski": "4.x-dev as 4.5.0",
+        "drupal/wisski_default_data_model": "2.x-dev as 2.0.1",
+        "drupal/wisski_starter": "2.x-dev as 2.0.0",
         "drush/drush": "^13.7"
     },
     "conflict": {
