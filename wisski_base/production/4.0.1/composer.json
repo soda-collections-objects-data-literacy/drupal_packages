@@ -47,9 +47,9 @@
         "drupal/single_content_sync": "^1.4",
         "drupal/sso_bouncer": "^1.0",
         "drupal/viewfield": "^3.0@beta",
-        "drupal/wisski": "4.x-dev as 4.5.0",
-        "drupal/wisski_default_data_model": "2.x-dev as 2.0.2",
-        "drupal/wisski_starter": "2.x-dev as 2.0.0",
+        "drupal/wisski": "^4.5.0",
+        "drupal/wisski_default_data_model": "^2.0.2",
+        "drupal/wisski_starter": "^2.0.0",
         "drush/drush": "^13.7"
     },
     "conflict": {
