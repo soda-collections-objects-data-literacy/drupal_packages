@@ -1,4 +1,31 @@
 # Changelog
+
+## 4.3.0
+- add `drupal/navigation_extra_tools` ^1.3
+## 4.2.0
+- update package `drupal/wisski_default_data_model` from ^2.0.4 to ^2.1.0
+## 4.1.0
+- update package `drupal/wisski` from ^4.5.0 to ^4.6.0
+- update package `drupal/wisski_default_data_model` from ^2.0.3 to ^2.0.4
+- update package `drupal/wisski_starter` from ^2.0.0 to ^2.1.0
+## 4.0.2
+- update package `drupal/wisski_default_data_model` from ^2.0.2 to ^2.0.3
+## 4.0.1
+- update package `drupal/wisski_default_data_model` from ^2.0.1 to ^2.0.2
+## development/4.x
+- add package `drupal/navigation_extra_tools` ^1.3
+- pin `drupal/wisski` to `4.x-dev as 4.6.0`
+- pin `drupal/wisski_default_data_model` to `2.x-dev as 2.1.0`
+- pin `drupal/wisski_starter` to `2.x-dev as 2.1.0`
+## 4.0.0
+- add package `drupal/gin` ^5.0
+- update package `drupal/conditional_fields` from dev-3495402-warning-trying-to to 4.0.0-alpha6
+- update package `drupal/inline_entity_form` from ^3.0@RC to ^3.0
+- update package `drupal/wisski` from dev-scs_base to ^4.5.0
+- update package `drupal/wisski_default_data_model` from ^1.11 to ^2.0.1
+- update package `drupal/wisski_starter` from ^1.1 to ^2.0.0
+- remove repository `conditional_fields-3495402`
+- remove repository `wisski`
 ## 3.7.0
 - add package `drupal/devel` ^5.0
 - update package `drupal/core-composer-scaffold` from ^11.3 <11.4 to ^11.4
