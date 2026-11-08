@@ -1,5 +1,8 @@
 # Changelog
 
+## 4.6.1
+- update package `drupal/wisski_default_data_model` from ^3.0.0 to ^3.0.1
+
 ## 4.6.0
 - update package `drupal/colorbox` from ^2.2 to ^2.2.1
 - update package `drupal/core-composer-scaffold` from ^11.4 to ^11.4.12
