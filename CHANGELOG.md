@@ -1,5 +1,32 @@
 # Changelog
 
+## 4.6.0
+- update package `drupal/colorbox` from ^2.2 to ^2.2.1
+- update package `drupal/core-composer-scaffold` from ^11.4 to ^11.4.12
+- update package `drupal/core-project-message` from ^11.4 to ^11.4.12
+- update package `drupal/core-recipe-unpack` from ^11.4 to ^11.4.12
+- update package `drupal/core-recommended` from ^11.4 to ^11.4.12
+- update package `drupal/ddb_minimal_record_export` from ^1.0 to ^1.0.1
+- update package `drupal/dependent_list` from ^1.3 to ^1.3.1
+- update package `drupal/devel` from ^5.0 to ^5.5
+- update package `drupal/dlf_aim_3d_viewer` from ^1.0 to ^1.0.2
+- update package `drupal/ds` from ^3.32 to ^3.37
+- update package `drupal/geofield` from ^10.3 to ^10.3.5
+- update package `drupal/gin` from ^5.0 to ^5.0.16
+- update package `drupal/health_check` from ^3.1 to ^3.2
+- update package `drupal/image_effects` from ^5.0 to ^5.0.1
+- update package `drupal/imagemagick` from ^5.0 to ^5.0.2
+- update package `drupal/imce` from ^3.1 to ^3.1.5
+- update package `drupal/leaflet` from ^10.2 to ^10.4.13
+- update package `drupal/navigation_extra_tools` from ^1.3 to ^1.3.2
+- update package `drupal/nextcloud_webdav_mount` from ^2.0 to ^2.0.1
+- update package `drupal/openid_connect` from dev-3516375-implement-drush-commands to 3.0.0-alpha9
+- update package `drupal/single_content_sync` from ^1.4 to ^1.4.19
+- update package `drupal/sso_bouncer` from ^1.0 to ^1.0.1
+- update package `drupal/wisski` from ^4.9.0 to 4.x-dev as 4.11.0
+- update package `drush/drush` from ^13.7 to ^13.8
+- remove repository `openid_connect-3516375`
+
 ## 4.3.0
 - add `drupal/navigation_extra_tools` ^1.3
 ## 4.2.0
