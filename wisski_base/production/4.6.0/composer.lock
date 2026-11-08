@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6b5b61d2abb83dc388098f4481f14c4",
+    "content-hash": "766eb207898feab937e0d53eac23c677",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3864,16 +3864,16 @@
         },
         {
             "name": "drupal/wisski_default_data_model",
-            "version": "2.3.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wisski_default_data_model.git",
-                "reference": "c4fc094dd2cd37ad12e44699a8d98e82944bdcf3"
+                "reference": "33622c31c65862d52f58309a525e606b95fa353e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fwisski_default_data_model/repository/archive.zip?sha=c4fc094dd2cd37ad12e44699a8d98e82944bdcf3",
-                "reference": "c4fc094dd2cd37ad12e44699a8d98e82944bdcf3",
+                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fwisski_default_data_model/repository/archive.zip?sha=33622c31c65862d52f58309a525e606b95fa353e",
+                "reference": "33622c31c65862d52f58309a525e606b95fa353e",
                 "shasum": ""
             },
             "require": {
@@ -3889,7 +3889,7 @@
                 "drupal/imagemagick": "^5.0",
                 "drupal/leaflet": "^10.4",
                 "drupal/viewfield": "^3.0@beta",
-                "drupal/wisski_starter": "2.2.0"
+                "drupal/wisski_starter": "2.3.0"
             },
             "type": "drupal-recipe",
             "notification-url": "https://packagist.org/downloads/",
@@ -3908,9 +3908,9 @@
                 "wisski"
             ],
             "support": {
-                "source": "https://git.drupalcode.org/project/wisski_default_data_model/-/tree/2.3.0"
+                "source": "https://git.drupalcode.org/project/wisski_default_data_model/-/tree/3.0.0"
             },
-            "time": "2026-10-18T22:39:58+00:00"
+            "time": "2026-11-08T22:40:09+00:00"
         },
         {
             "name": "drupal/wisski_pathbuilder",
@@ -4041,21 +4041,21 @@
         },
         {
             "name": "drupal/wisski_starter",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wisski_starter.git",
-                "reference": "b6739558ff2ed5d10dad8265bdf91b63a25b0874"
+                "reference": "553b175db74884846d1ecd9f1eba436f98255481"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fwisski_starter/repository/archive.zip?sha=b6739558ff2ed5d10dad8265bdf91b63a25b0874",
-                "reference": "b6739558ff2ed5d10dad8265bdf91b63a25b0874",
+                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fwisski_starter/repository/archive.zip?sha=553b175db74884846d1ecd9f1eba436f98255481",
+                "reference": "553b175db74884846d1ecd9f1eba436f98255481",
                 "shasum": ""
             },
             "require": {
                 "drupal/inline_entity_form": "^3.0",
-                "drupal/wisski": "^4.6"
+                "drupal/wisski": "4.x-dev as 4.11.0"
             },
             "type": "drupal-recipe",
             "notification-url": "https://packagist.org/downloads/",
@@ -4074,9 +4074,9 @@
                 "wisski"
             ],
             "support": {
-                "source": "https://git.drupalcode.org/project/wisski_starter/-/tree/2.2.0"
+                "source": "https://git.drupalcode.org/project/wisski_starter/-/tree/2.3.0"
             },
-            "time": "2026-10-10T21:56:36+00:00"
+            "time": "2026-11-08T22:41:52+00:00"
         },
         {
             "name": "drush/drush",
