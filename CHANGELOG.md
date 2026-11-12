@@ -2,6 +2,7 @@
 
 ## 4.7.0
 - update package `drupal/wisski_default_data_model` from ^3.1.0 to ^3.1.1
+- fix the `nextcloud_webdav_mount` 2.1.0 dist checksum in the lock (same as 4.6.0/4.6.1)
 
 ## 4.6.3
 - update package `drupal/wisski_default_data_model` from ^3.0.2 to ^3.1.0

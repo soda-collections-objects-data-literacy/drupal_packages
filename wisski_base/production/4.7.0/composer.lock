@@ -3091,7 +3091,7 @@
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/nextcloud_webdav_mount-2.1.0.zip",
                 "reference": "2.1.0",
-                "shasum": "ff69de5ac679070a28434581fda6d40906829b03"
+                "shasum": "23233be2ea4d027a2554b2149cf84d8772475590"
             },
             "require": {
                 "drupal/core": "^10 || ^11"
