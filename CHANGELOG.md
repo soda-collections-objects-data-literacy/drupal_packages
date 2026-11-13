@@ -1,5 +1,8 @@
 # Changelog
 
+## 4.7.2
+- update package `drupal/wisski_default_data_model` from ^3.1.2 to ^3.1.3
+
 ## 4.7.1
 - update package `drupal/wisski_default_data_model` from ^3.1.1 to ^3.1.2
 
