@@ -3548,7 +3548,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/wisski.git",
-                "reference": "7adaf9158800075609ca7f2416095ec18547395f"
+                "reference": "79377907227d91052d22a5382490d05e27a5848f"
             },
             "require": {
                 "drupal/core": ">=10.4 <12",
