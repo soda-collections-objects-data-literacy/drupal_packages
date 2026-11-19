@@ -1,0 +1,25 @@
+--- a/field_group.libraries.yml	2026-11-19 09:55:25.953630426 +0000
++++ b/field_group.libraries.yml	2026-11-19 09:55:25.965471060 +0000
+@@ -48,15 +48,20 @@
+ 
+ element.horizontal_tabs:
+   js:
+-    # Load before field_group/core.
+-    formatters/tabs/horizontal-tabs.js: { weight: -1 }
++    formatters/tabs/horizontal-tabs.js: {}
+   css:
+     component:
+       formatters/tabs/horizontal-tabs.css: {}
+   dependencies:
+     - core/jquery
+     - core/once
++    - core/drupal
++    - core/drupalSettings
+     - core/drupal.collapse
++  # The horizontalTabs behavior must attach before fieldGroup, which reads the
++  # tab data it sets (required markers, focus on tabs with errors).
++  before:
++    - field_group/core
+ 
+ details_validation:
+   js:

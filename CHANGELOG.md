@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.7.3
+- add package `cweagans/composer-patches` ^1.7
+- patch `drupal/field_group` for horizontal tabs on Drupal >= 10.4 / 11.1 (field_group#3625536)
+
 ## 4.7.2
 - update package `drupal/wisski_default_data_model` from ^3.1.2 to ^3.1.3
 

@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^2.3",
+        "cweagans/composer-patches": "^1.7",
         "drupal/colorbox": "^2.2.1",
         "drupal/conditional_fields": "4.0.0-alpha6",
         "drupal/core-composer-scaffold": "^11.4.12",
@@ -56,13 +57,14 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
-            "drupal/core-composer-scaffold": true,
-            "drupal/core-recipe-unpack": true,
-            "drupal/core-project-message": true,
-            "phpstan/extension-installer": true,
+            "cweagans/composer-patches": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "drupal/core-recipe-unpack": true,
             "php-http/discovery": true,
             "php-tuf/composer-integration": true,
+            "phpstan/extension-installer": true,
             "symfony/runtime": true
         },
         "sort-packages": true
@@ -131,6 +133,11 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "patches": {
+            "drupal/field_group": {
+                "Horizontal tabs: drop weight -1, load via dependencies (field_group#3625536)": "patches/field_group-horizontal-tabs-weight.patch"
+            }
         }
     }
 }
