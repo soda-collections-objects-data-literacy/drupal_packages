@@ -1,4 +1,8 @@
 # Changelog
+## 4.7.4
+- refresh `drupal/wisski` `4.x-dev` lock to `5ced2173` (pathbuilder import tags/cardinality,
+  core settings schema, FakeTime tear-down, translated help HTML, PHPStan 2.3.7 API fixes)
+
 
 ## 4.7.3
 - add package `cweagans/composer-patches` ^1.7
